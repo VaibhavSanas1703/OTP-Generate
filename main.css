@@ -4,8 +4,12 @@
    margin: 0;padding: 0;box-sizing: border-box;font-family: "Figtree", sans-serif;
 }
 
+:root{
+   --primary:#FF0B55;
+}
+
 h1{
-   margin-bottom: 10px;
+   margin: 10px 0 10px 0;
 }
 
 body{
@@ -27,8 +31,8 @@ body{
    flex-direction: column;
    gap: 20px;
    border: 1px solid rgba(0,0,0,0.2);
-   padding: 30px 15px;
-   border-radius: 10px;
+   padding: 10px 15px;
+   border-radius: 5px;
    background: white;
 }
 
@@ -40,10 +44,10 @@ input{
    border-bottom: 1px solid rgba(0,0,0,0.2);
    background: transparent;
    padding: 0 10px;
-   margin-top: 10px;
-   font-size: 15px;
+   /* margin-top: 10px; */
+   font-size: 15.5px;
    font-weight: 500;
-   accent-color:#5356FF;
+   accent-color:var(--primary);
    transition: .3s;
    appearance: none;
 }
@@ -57,8 +61,8 @@ input{
    position: absolute;
    right: 20px;
    font-size: 21px;
-   color: #5356FF;
-   transform: translateY(60%);
+   color: var(--primary);
+   transform: translateY(45%);
 }
 
 input::-webkit-outer-spin-button,
@@ -67,12 +71,12 @@ input::-webkit-inner-spin-button {
 }
 
 input:focus{
-   border-color: #5356FF;
+   border-color: var(--primary);
 }
 
 .btns{
    width: 100%;
-   margin: 20px 0;
+   margin: 10px 0;
    display: flex;
    gap: 10px;
 }
@@ -80,7 +84,7 @@ input:focus{
 .btns button{
    width: 50%;
    height: 45px;
-   background: #5356FF;
+   background: var(--primary);
    font-size: 16px;
    color: #Fff;
    outline: none;
@@ -97,9 +101,9 @@ input:focus{
 
 #show-error{
    color: red;
-   margin-bottom: 10px;
    font-weight:500;
    font-size: 17px;
+   margin-bottom: 12px;
 }
 
 .go-btn{

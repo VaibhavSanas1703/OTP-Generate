@@ -32,13 +32,8 @@ function verifyOTP(){
    else{
       error_msg.style.color = "green"
       error_msg.innerHTML = "OTP Verify Successfully";
-      goBtn.style.display = "block";
    }
 }
-
-goBtn.addEventListener("click",function(){
-   location.href = "https://codervv.netlify.app"
-})
 
 
 input.addEventListener("keyup",checkOtp)
